@@ -1,4 +1,6 @@
 # PR Response Doc — CineLog Watchlist Feature
+## Commit Messages
+![alt text](image.png)
 
 ## AI Usage
 
