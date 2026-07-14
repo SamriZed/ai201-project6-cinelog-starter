@@ -1,6 +1,0 @@
-[33m08d23c9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/watchlist[m[33m)[m PR-response updated with default visibility and sort order comments
-[33maa31f3c[m created a pytest for add_to_watchlist
-[33m74b358c[m added deduplication logic to add_to_watchlist() in services/watchlist_service.py and handle duplicate watchlist entries with 409 response
-[33md917d7f[m renamed save_to_watchlist() toadd_to_watchlist()
-[33m519c123[m fix: update film retrieval method to use db.session.get in collection and watchlist services
-[33me192129[m added watchlist model and endpoint fixed a bug more changes
