@@ -62,3 +62,12 @@ I kept the .gitignore entries from both branches and resolved the watchlist file
 I finished git rebase --continue, checked that git log --oneline --merges origin/main..HEAD returned nothing, and reran the watchlist tests successfully.
 
 ## PR Description
+The watchlist feature lets a user save films they want to watch later, view the saved list, and avoid adding the same film twice. I made two design decisions on purpose: I kept the default visibility as `public=True`, and I sorted the watchlist by newest first using the date added.
+
+Manual test steps:
+1. Start the app and open the watchlist endpoint for a valid user.
+2. Send a POST request to `/watchlist/<user_id>/add` with a valid `film_id`.
+3. Confirm the response returns `201` and the saved film appears in the watchlist.
+4. Send the same request again with the same `film_id`.
+5. Confirm the app rejects the duplicate with a `409` response.
+6. Add a few different films and confirm the watchlist shows the newest entry first.
